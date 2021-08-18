@@ -1,0 +1,59 @@
+<html>
+<style type="text/css">
+.div {
+    height: 50px;
+    width: 350px;
+    background:;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+.div1 {
+    height: 150px;
+    width: 350px;
+    position: relative;
+    top: 30%;
+    left: 85%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+.mar{
+    position: fixed;
+    top:90%;
+    font-family: Jokerman;
+    text-shadow: seagreen;
+
+}
+.div2 {
+    height: 268px;
+    width: 512px;
+    position: fixed;
+    top: 40%;
+    right: 65%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+</style>
+<body style="background :powderblue;">
+    <h1 style="font-family: Algerian;text-align: center;Color:red">Bapuji Institute of Engineering & Technology</h1>
+    <h2 style="font-family: Algerian;text-align: center;Color:purple">Information Science & Engineering Department</h2>
+   <h3 style="font-family: Algerian;text-align: center;"> Facial Expression Classification Using CNN Algorithm for Autistic Children
+   </h3>  
+   <img src="{{url_for('static', filename='builtin/Emotions.png')}}" class="div1" />   
+   <img src="{{url_for('static', filename='builtin/1.jpg')}}" class="div2" />  
+<div class="div">
+<form action="{{url_for('after')}}" method='POST' enctype='multipart/form-data'>
+       <input type="file" name='file1' style="background:white">
+<input type="submit" name="btn"> 
+</form>
+<br> <br>
+<p style="font-family:Algerian;font-size: medium;color: orangered;">Emotions are biologically-based psychological states brought on by neurophysiological changes, variously associated with thoughts, feelings, behavioural responses, and a degree of pleasure or displeasure.</p>
+</div>
+<marquee class="mar" >Created By Bhyaravi MR,Chaitra KM,Brunda HV & Piyush Choudhary </marquee>
+</body>
+
+</html>

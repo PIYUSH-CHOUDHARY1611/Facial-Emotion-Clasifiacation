@@ -1,0 +1,54 @@
+<html>
+    <style>
+
+    .div {
+        height: 360px;
+        width: 360px;
+        color: red;
+        font-family:Algerian ;
+    
+        position: fixed;
+        top: 30%;
+        left: 60%;
+        margin-top: -100px;
+        margin-left: -200px;
+    }
+    .mar{
+    position: fixed;
+    top:90%;
+    font-family: Jokerman;
+    text-shadow: seagreen;
+
+}
+.mar1{
+    position: fixed;
+    top:20%;
+    font-size: 20px;
+    font-family: Jokerman;
+    text-shadow: seagreen;
+
+}
+    
+    </style>
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+        </script>
+<body style="background-color: powderblue;">
+ <p class="mar1">Here is your Subject's Emotion classified by Our Model</p>
+ <div class="div">  
+<img src="{{url_for('static', filename='after.jpg')}}"height=40% width=40%>
+<br> <br> <br> <br>
+{{data1}}
+<br>
+     <br>
+     <br>
+     {{data2}}
+     <br><br>
+<button onclick="goBack()" style="background-color: blue;">Check another Image</button>
+</div>
+<marquee class="mar" >Created By Bhyaravi MR,Chaitra KM,Brunda HV & Piyush Choudhary </marquee>
+</body>
+
+</html>
